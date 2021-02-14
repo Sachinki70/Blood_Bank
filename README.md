@@ -1,14 +1,21 @@
-# Blood Bank System
+# Blood Bank Management System
+# This is a Django-based web application for managing blood donations and requests.
 
-# Blood_Bank
-This is Just reference 
- to run the file type or run this command 
- 
-py manage.py makemigrations
-py manage.py migrate
-py manage.py runserver
-
-
+![developer](https://img.shields.io/badge/Developed%20By%20%3A-Sumit%20Kumar-red)
+---
+## screenshots
+### Homepage
+![homepage snap](https://github.com/sumitkumar1503/bloodbankmanagement/blob/master/static/screenshot/homepage.png?raw=true)
+### Admin Dashboard
+![dashboard snap](https://github.com/sumitkumar1503/bloodbankmanagement/blob/master/static/screenshot/admindashboard.png?raw=true)
+### Blood Donation 
+![invoice snap](https://github.com/sumitkumar1503/bloodbankmanagement/blob/master/static/screenshot/blooddonation.png?raw=true)
+### Blood Request
+![doctor snap](https://github.com/sumitkumar1503/bloodbankmanagement/blob/master/static/screenshot/bloodrequest.png?raw=true)
+### Logout
+![doctor snap](https://github.com/sumitkumar1503/bloodbankmanagement/blob/master/static/screenshot/logout.png?raw=true)
+---
+## Functions
 ### Admin
 - Create Admin account using command
 ```
@@ -23,19 +30,24 @@ py manage.py createsuperuser
 - Can View And Delete Questions Too.
 
 ### Donor
-- Apply for job in System. Then Login (Approval required by system admin, Then only teacher can login).
-- After Login, can see Total Number Of Student, Course, Questions are there in system on Dashboard.
-- Can Add, View, Delete Course/Exams.
-- Can Add Questions To Respective Courses With Options, Correct Answer, And Marks.
-- Can View And Delete Questions Too.
-> **_NOTE:_**  Basically Admin Will Hire Teachers To Manage Courses and Questions.
+- Donor can create account by providing basic details.
+- After Login, Donor can donate blood, After approval from admin only, blood will be added to blood stock.
+- Donor can see their donation history with status (Pending, Approved, Rejected).
+- Donor can also request for blood from blood stock.
+- Donor can see their blood request history with status.
+- Donor can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
+> **_NOTE:_**  Donor can donate blood and can also request for blood.
+
+
+
+
 
 ### Patient
 - Create account (No Approval Required By Admin, Can Login After Signup)
-- After Login, Can See How Many Courses/Exam And Questions Are There In System On Dashboard.
-- Can Give Exam Any Time, There Is No Limit On Number Of Attempt.
-- Can View Marks Of Each Attempt Of Each Exam.
-- Question Pattern Is MCQ With 4 Options And 1 Correct Answer.
+- After Login, Can see number of blood request Made, Approved, Pending, Rejected by Admin on their dashboard.
+- Patient can request for blood of specific blood group and unit from blood stock.
+- Patient can see their blood request history with status (Pending, Approved, Rejected).
+
 ---
 
 ## HOW TO RUN THIS PROJECT
@@ -46,7 +58,7 @@ py manage.py createsuperuser
 ```
 python -m pip install -r requirements. txt
 ```
----
+
 ```
 py manage.py makemigrations
 py manage.py migrate
